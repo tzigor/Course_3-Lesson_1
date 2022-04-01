@@ -26,13 +26,12 @@
 -->
     <script>
         "use strict";
-        const temperature = prompt('Input temperature in celsius:');
-        const temperatureFahrenheit = (9 / 5) * Number.parseFloat(temperature) + 32;
-        if (isNaN(temperatureFahrenheit)) {
+        const tempCelsius = prompt('Input temperature in celsius:');
+        const tempFahrenheit = (9 / 5) * Number.parseFloat(tempCelsius) + 32;
+        if (isNaN(tempFahrenheit)) {
             console.log('Incorrect input data (Not a number)');
         } else {
-            console.log('Celsuius: ' + temperature);
-            console.log('Fahrenheit: ' + temperatureFahrenheit);
+            console.log(`Celsuius: ${tempCelsius}, Fahrenheit: ${tempFahrenheit.toFixed(2)}`);
         }
     </script>
 </body>
